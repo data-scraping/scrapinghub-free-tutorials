@@ -5,14 +5,11 @@ With the evergrowing amount of data spread around the web, the need for gatherin
 
 In this quick Scrapy Tutorial Course, you'll learn everything you need to get started with web scraping using Python and Scrapy. Among other things, you'll learn how to:
 
-1.Extract data from the web using CSS selectors
-
-2.Follow pagination buttons with a spider
-
-3.Handle websites that use infinite scrolling
-
-4.Authenticate your spider in a website 
-
-5.Deploy and run your spiders in the cloud
-
-6.Become confident in Web Scraping`
+<ul>
+<li>Extract data from the web using CSS selectors</li>
+<li>Follow pagination buttons with a spider</li>
+<li>Handle websites that use infinite scrolling</li>
+<li>Authenticate your spider in a website </li>
+<li>Deploy and run your spiders in the cloud</li>
+<li>Become confident in Web Scraping</li>
+</ul>
