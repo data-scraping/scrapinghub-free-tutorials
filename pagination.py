@@ -7,7 +7,6 @@ class PaginationSpider(scrapy.Spider):
     start_urls = ['http://quotes.toscrape.com/']
 
     def parse(self, response):
-        # follow pagination links
         self.log('I jus visited: ' + response.url)
         # How to iterate over page elements
         # How to extract data from repeating elements
@@ -18,6 +17,7 @@ class PaginationSpider(scrapy.Spider):
                 'tags': quote.css('a.tag::text').extract()
             }
             yield item
+        # follow pagination links
         next_page_url =  response.css('li.next > a::attr(href)').extract_first()
         if next_page_url:
             next_page_url = response.urljoin(next_page_url)
