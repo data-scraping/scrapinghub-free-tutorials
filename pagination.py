@@ -18,6 +18,8 @@ class PaginationSpider(scrapy.Spider):
             }
             yield item
         # follow pagination links
+        # How to find links in a page
+        # How to create requests to other pages         
         next_page_url =  response.css('li.next > a::attr(href)').extract_first()
         if next_page_url:
             next_page_url = response.urljoin(next_page_url)
